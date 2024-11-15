@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="preload" href="css/normaliza.css" as="style">
+    <link rel="stylesheet" href="css/normaliza.css" type="text/css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="fondo-login">
+    <header>
+        <div class="imagen">
+            <img src="img/logo_Sena.png">
+        </div>
+    </header>
+    <h2>Taller HTML Adso Tarde</h2>
+    <form name="form" action="index.html" class="formulario">
+        <fieldset>
+            <legend>Ingreso Usuarios registrados</legend>
+            <div class="contenedor-campos-login">
+                <div class="campo-login">
+                    <label>Usuario</label>
+                    <input type="text" id="user" placeholder="Ingrese su Usuario">
+                </div>
+                <div class="campo-login">
+                    <label>Contraseña</label>
+                    <input type="password" id="pass" placeholder="Ingrese su Contraseña">
+                </div>
+                <div class="campo">
+                    <button class="boton" onclick="go()">Acceder</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <!-- <script>
+        const users = [
+            { email: '1', contrasena: '1' },
+            { email: '3', contrasena: '2' },
+            { email: '3', contrasena: '3' },
+            { email: '4', contrasena: '4' }
+        ];
+        function go() {
+            var user_ = document.getElementById('user').value;
+            var pass_ = document.getElementById('pass').value;
+            var verify = !!users.find(element => element.email === user_ && element.contrasena === pass_)
+            console.log(verify);
+            
+            while (true) 
+            {
+                if (verify) 
+                {
+                    alert("Usuario y contraseña correctos");
+                    break;
+                } 
+                else 
+                {
+                    alert("Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.");
+                }
+            }
+        }
+    </script> -->
+
+</body>
+
+</html>
